@@ -10,7 +10,7 @@ app.layout = html.Div([html.H1("Hello, World!",
                                    "color": "blue",
                                    "fontSize": "40px",
                                    "marginLeft": "20%"
-                               })])
+                               }),html.H1("checking what shows up")])
 
 # run the app
 if __name__ == "__main__":
