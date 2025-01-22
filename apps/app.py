@@ -3,7 +3,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 
 #creating the app:
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes,MINTY])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.MINTY])
 
 #creating app layout:
 app.layout = html.Div([html.H1("Innovation for Poverty Actions Projects",
