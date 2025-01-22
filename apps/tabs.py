@@ -17,6 +17,15 @@ app.layout = html.Div([dbc.Row([dbc.Col([html.H1("Innovation for Poverty Actions
                                        "fontSize": "25px"})],lg = {"size":8,
                             "offset": 2},xl = {"size":8,
                             "offset": 2},md = 12)]),
+                       dbc.Row([html.Div([
+                                    dcc.Dropdown(id = "id_dropdown",
+                                                options = [{"label" : time,
+                                                            "value": time}
+                                                            for time in timeline]),
+                                    html.Br(),
+                                    html.Div(id = "output_dropdown")
+                                        ])
+                                ]),
                        dbc.Row([dbc.Tabs([
                                     dbc.Tab([html.Ul([html.Li(["Number of Activities: 3"]),
                                                     html.Li(["Temporal Coverage: 2023-2024"]),
