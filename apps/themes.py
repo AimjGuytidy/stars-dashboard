@@ -26,3 +26,4 @@ app.layout = html.Div([dbc.Col([html.H1("Innovation for Poverty Actions Projects
 if __name__ == "__main__":
     app.run_server(debug=True)
             
+           
